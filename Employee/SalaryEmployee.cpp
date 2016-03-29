@@ -1,7 +1,7 @@
 #include "SalaryEmployee.h"
 
 
-SalaryEmployee::SalaryEmployee() : salary(10000)		//let employee montly salary = 10000
+SalaryEmployee::SalaryEmployee() : MonthlySalary(0)		//initialising employee monthly salary with zero
 {
 }
 
@@ -12,6 +12,11 @@ SalaryEmployee::~SalaryEmployee()
 
 void SalaryEmployee::setSalary(float xSalary)
 {
-	salary = xSalary;
+	MonthlySalary = xSalary;
+}
+
+float SalaryEmployee::salary()
+{
+	return MonthlySalary;
 }
 

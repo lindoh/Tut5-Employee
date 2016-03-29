@@ -16,6 +16,7 @@ public:
 	~HourlyEmployee();
 	void setHourlyRate(float);
 	void setHoursWorked(int);
+	float salary();
 };
 
 #endif
